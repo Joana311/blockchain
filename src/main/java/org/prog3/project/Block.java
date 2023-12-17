@@ -1,0 +1,36 @@
+package org.prog3.project;
+
+import java.util.Date;
+
+public class Block {
+    public String hash;
+    public String prevHash;
+    private final String datA;
+    private final long timeStamp;
+    private int nonce;
+
+    public Block(String data, String prevHash) {
+        this.datA = data;
+        this.prevHash = prevHash;
+        this.timeStamp = new Date().getTime();
+        this.hash = calculateHash();
+    }
+
+    //calculate the hash
+    public String calculateHash() {
+        return StringUtil.applySha256(
+                prevHash +
+                        timeStamp +
+                        nonce +
+                        datA);
+    }
+
+    public void mineBlock(int difficulty) {
+        String target = new String(new char[difficulty]).replace('\0', '0'); //Create a string with difficulty * "0"
+        while (!hash.substring(0, difficulty).equals(target)) {
+            nonce++;
+            hash = calculateHash();
+        }
+        System.out.println("Block Mined!!! : " + hash);
+    }
+}
