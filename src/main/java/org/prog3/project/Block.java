@@ -1,7 +1,12 @@
 package org.prog3.project;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Date;
 
+@Getter
+@Setter
 public class Block {
     public String hash;
     public String prevHash;

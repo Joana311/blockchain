@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.google.gson.GsonBuilder;
 
 
-public class AlowolChain {
+public class PikkwolfChain {
     public static ArrayList<Block> blockchain = new ArrayList<>();
     public static int difficulty = 5;
 
