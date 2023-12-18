@@ -12,7 +12,7 @@ public class Block {
     public String prevHash;
     private final String datA;
     private final long timeStamp;
-    private int nonce;
+    private int nonce;  // the difficulty>
 
     public Block(String data, String prevHash) {
         this.datA = data;
