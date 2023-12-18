@@ -29,6 +29,9 @@ public class PikkwolfChain {
         String blockchainJson = new GsonBuilder().setPrettyPrinting().create().toJson(blockchain);
         System.err.println("The blockchain is as follows below:");
         System.out.println(blockchainJson);
+        // TODO: add a socket, so Docker can be used and spawn more machines
+        // such that more computers can connect to each other.
+        // follow the lecture tutorial from Tosic
     }
 
     public static Boolean isChainValid() {
