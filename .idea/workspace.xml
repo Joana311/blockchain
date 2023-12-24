@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Medium" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" afterDir="false" />
@@ -19,13 +25,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -62,6 +69,11 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.PikkwolfChain.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BLOCKCHAIN [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BLOCKCHAIN [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BLOCKCHAIN [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BLOCKCHAIN [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BLOCKCHAIN [validate].executor&quot;: &quot;Run&quot;,
     &quot;Maven.untitled [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.untitled [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -82,6 +94,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.prog3.project" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -161,6 +176,7 @@
       <workItem from="1703278065136" duration="23000" />
       <workItem from="1703373584139" duration="566000" />
       <workItem from="1703439519054" duration="666000" />
+      <workItem from="1703460688572" duration="88000" />
     </task>
     <servers />
   </component>

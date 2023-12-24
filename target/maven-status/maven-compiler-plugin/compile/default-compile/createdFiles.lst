@@ -1,3 +1,7 @@
 org/prog3/project/Block.class
 org/prog3/project/PikkwolfChain.class
+org/prog3/project/TransactionOutput.class
+org/prog3/project/Transaction.class
+org/prog3/project/Wallet.class
+org/prog3/project/TransactionInput.class
 org/prog3/project/StringUtil.class
