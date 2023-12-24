@@ -12,7 +12,7 @@ public class Block {
     public String prevHash;
     private final String datA;
     private final long timeStamp;
-    private int nonce;  // the difficulty>
+    private int nonce;  // the difficulty?
 
     public Block(String data, String prevHash) {
         this.datA = data;
@@ -21,7 +21,6 @@ public class Block {
         this.hash = calculateHash();
     }
 
-    //calculate the hash
     public String calculateHash() {
         return StringUtil.applySha256(
                 prevHash +
@@ -36,6 +35,6 @@ public class Block {
             nonce++;
             hash = calculateHash();
         }
-        System.out.println("Block Mined!!! : " + hash);
+        System.out.println("Block Mined! : " + hash);
     }
 }

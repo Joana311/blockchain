@@ -7,20 +7,19 @@ import com.google.gson.GsonBuilder;
 
 public class PikkwolfChain {
     public static ArrayList<Block> blockchain = new ArrayList<>();
-    public static int difficulty = 5;
+    public static int difficulty = 6;
 
     public static void main(String[] args) {
 
-        blockchain.add(new Block("Hi, pik1", "0"));
+        blockchain.add(new Block("Hi, pik1", "0"));     // genesis block
         System.err.println("mining pik1");
         blockchain.getFirst().mineBlock(difficulty);
 
-
-        blockchain.add(new Block("Yo, pik2", blockchain.get(blockchain.size() - 1).hash));
+        blockchain.add(new Block("Yo, pik2", blockchain.getLast().hash));
         System.err.println("mining pik2");
         blockchain.get(1).mineBlock(difficulty);
 
-        blockchain.add(new Block("Hey, pik3", blockchain.get(blockchain.size() - 1).hash));
+        blockchain.add(new Block("Hey, pik3", blockchain.getLast().hash));
         System.err.println("mining pik3");
         blockchain.get(2).mineBlock(difficulty);
 
