@@ -23,12 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zstoimchev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zstoimchev&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -95,7 +95,7 @@
     </configuration>
     <configuration name="PikkwolfChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.prog3.project.PikkwolfChain" />
-      <module name="untitled" />
+      <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.prog3.project.*" />
@@ -107,7 +107,7 @@
       </method>
     </configuration>
     <configuration name="PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
+      <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.prog3.project.*" />
