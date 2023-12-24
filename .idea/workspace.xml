@@ -23,6 +23,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zstoimchev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c34f4829-9ed9-418b-96c6-6690f37fc06a" />
+        <option name="url" value="https://github.com/zstoimchev/blockchain" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -71,7 +85,7 @@
       <recent name="org.prog3.project" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess">
+  <component name="RunManager" selected="Application.PikkwolfChain">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="blockchain" />
@@ -110,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess" />
         <item itemvalue="Application.PikkwolfChain" />
+        <item itemvalue="JUnit.PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -120,6 +134,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-b9b76bbb" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-29f91840" />
         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-920bfa72" />
       </set>
     </attachedChunks>
@@ -137,11 +152,27 @@
       <workItem from="1702775024166" duration="33000" />
       <workItem from="1702776472371" duration="4639000" />
       <workItem from="1702837695446" duration="6000" />
+      <workItem from="1702935658488" duration="871000" />
+      <workItem from="1703066705862" duration="602000" />
+      <workItem from="1703278065136" duration="23000" />
+      <workItem from="1703373584139" duration="566000" />
+      <workItem from="1703439519054" duration="666000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
