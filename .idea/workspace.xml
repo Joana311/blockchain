@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Online-Links" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Online-Links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/TransactionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/TransactionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/TransactionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/TransactionOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Wallet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -80,7 +89,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
@@ -111,7 +120,7 @@
       <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.prog3.project.*" />
+          <option name="PATTERN" value="org.prog3.project.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,7 +132,7 @@
       <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.prog3.project.*" />
+          <option name="PATTERN" value="org.prog3.project.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,7 +180,11 @@
       <workItem from="1703373584139" duration="566000" />
       <workItem from="1703439519054" duration="666000" />
       <workItem from="1703460688572" duration="88000" />
-      <workItem from="1703460965888" duration="3864000" />
+      <workItem from="1703460965888" duration="4031000" />
+      <workItem from="1703497265262" duration="10000" />
+      <workItem from="1703497385826" duration="54000" />
+      <workItem from="1703498799251" duration="12000" />
+      <workItem from="1703506387562" duration="2430000" />
     </task>
     <servers />
   </component>
