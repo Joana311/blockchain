@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/prog3/project/PikkwolfChainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/TransactionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/TransactionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/TransactionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/TransactionOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Wallet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -175,7 +177,7 @@
       <workItem from="1703373584139" duration="566000" />
       <workItem from="1703439519054" duration="666000" />
       <workItem from="1703460688572" duration="88000" />
-      <workItem from="1703460965888" duration="1346000" />
+      <workItem from="1703460965888" duration="2613000" />
     </task>
     <servers />
   </component>
