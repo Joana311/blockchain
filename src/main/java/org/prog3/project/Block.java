@@ -39,7 +39,7 @@ public class Block {
     }
 
     public void addTransaction(Transaction transaction) {   //Add transactions to block
-        if (transaction == null) return;    //process transaction and check if valid, unless block is genesis then ignore
+        if (transaction == null) return;    // process transaction and check if valid, unless block is genesis then ignore
         if ((!Objects.equals(prevHash, "0"))) {
             if ((!transaction.processTransaction())) {
                 System.out.println("Transaction failed to process. Discarded.");
