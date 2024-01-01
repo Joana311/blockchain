@@ -67,6 +67,7 @@ public class PikkwolfChain {
 
         isChainValid();
 
+        // TODO: add a socket
     }
 
     public static void isChainValid() {
