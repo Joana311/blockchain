@@ -31,6 +31,9 @@ public class PikkwolfChain {
         walletB = new Wallet();
         Wallet coinbase = new Wallet();
 
+        // TODO: add some funds to the genesis transaction, so as nodes connect they can split them
+        // TODO: maybe smarter will be if message transfer is developed instead of crypto
+
         // create genesis transaction, which sends 100 NoobCoin to walletA:
         genesisTransaction = new Transaction(coinbase.publicKey, walletA.publicKey, 100f, null);
         genesisTransaction.generateSignature(coinbase.privateKey);     // manually sign the genesis transaction
