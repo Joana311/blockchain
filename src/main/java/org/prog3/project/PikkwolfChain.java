@@ -4,11 +4,17 @@ import org.prog3.project.Transaction.Transaction;
 import org.prog3.project.Transaction.TransactionInput;
 import org.prog3.project.Transaction.TransactionOutput;
 
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.security.Security;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class PikkwolfChain {
+    static ExecutorService executorService = Executors.newCachedThreadPool();
     public static ArrayList<Block> blockchain = new ArrayList<>();
     public static HashMap<String, TransactionOutput> UTXOs;
 
@@ -71,6 +77,20 @@ public class PikkwolfChain {
         isChainValid();
 
         // TODO: add a socket
+
+        System.err.println("helo");
+        ArrayList<Client> clients = new ArrayList<>();
+        try {
+            ServerSocket server = new ServerSocket(5555);
+            while (true) {
+                Socket connection = server.accept();
+                Client newClient = new Client(connection, clients, blockchain);
+                clients.add(newClient);
+                executorService.submit(newClient);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void isChainValid() {

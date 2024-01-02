@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/bitcoin paper.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -100,6 +99,9 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.prog3.project" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.prog3.project" />
     </key>
   </component>
@@ -184,6 +186,8 @@
       <workItem from="1704070461327" duration="791000" />
       <workItem from="1704072875973" duration="10000" />
       <workItem from="1704145102961" duration="2728000" />
+      <workItem from="1704149769649" duration="628000" />
+      <workItem from="1704153423279" duration="2346000" />
     </task>
     <servers />
   </component>
