@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="" />
+    <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,8 +183,17 @@
       <workItem from="1704072875973" duration="10000" />
       <workItem from="1704145102961" duration="2728000" />
       <workItem from="1704149769649" duration="628000" />
-      <workItem from="1704153423279" duration="3555000" />
+      <workItem from="1704153423279" duration="4191000" />
     </task>
+    <task id="LOCAL-00001" summary="commit from intellij">
+      <option name="closed" value="true" />
+      <created>1704157359030</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704157359030</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,5 +212,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit from intellij" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit from intellij" />
   </component>
 </project>
