@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij">
-      <change afterPath="$PROJECT_DIR$/resources/instructions.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lecture8/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lecture8/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +111,7 @@
       <recent name="org.prog3.project" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.prog3.project.Server">
+  <component name="RunManager" selected="Application.PikkwolfChain">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="blockchain" />
@@ -181,9 +176,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PikkwolfChain" />
         <item itemvalue="Application.org.prog3.project.Server" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.PikkwolfChain" />
         <item itemvalue="JUnit.PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess" />
         <item itemvalue="Application.Main" />
       </list>
