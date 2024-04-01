@@ -25,14 +25,14 @@ public class Client implements Runnable {
     }
 
 
-    public void sendFunds(Client receiver, float amount) {
-        Transaction transaction = this.wallet.createTransaction(receiver.wallet.getPublicKey(), amount);
-        if (transaction != null) {
-            Block newBlock = new Block(blockchain.get(blockchain.size() - 1).getHash());
-            newBlock.addTransaction(transaction);
-            blockchain.add(newBlock);
-        }
-    }
+//    public void sendFunds(Client receiver, float amount) {
+//        Transaction transaction = this.wallet.createTransaction(receiver.wallet.getPublicKey(), amount);
+//        if (transaction != null) {
+//            Block newBlock = new Block(blockchain.get(blockchain.size() - 1).getHash());
+//            newBlock.addTransaction(transaction);
+//            blockchain.add(newBlock);
+//        }
+//    }
 
     @Override
     public void run() {
