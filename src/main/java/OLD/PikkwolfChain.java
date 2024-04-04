@@ -1,12 +1,9 @@
-package org.prog3.project;
+package OLD;
 
-import org.prog3.project.Transaction.Transaction;
-import org.prog3.project.Transaction.TransactionInput;
-import org.prog3.project.Transaction.TransactionOutput;
+import OLD.Transaction.Transaction;
+import OLD.Transaction.TransactionInput;
+import OLD.Transaction.TransactionOutput;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
 import java.security.Security;
 import java.util.ArrayList;
 import java.util.HashMap;

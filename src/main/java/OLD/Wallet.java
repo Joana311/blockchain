@@ -1,8 +1,8 @@
-package org.prog3.project;
+package OLD;
 
-import org.prog3.project.Transaction.Transaction;
-import org.prog3.project.Transaction.TransactionInput;
-import org.prog3.project.Transaction.TransactionOutput;
+import OLD.Transaction.Transaction;
+import OLD.Transaction.TransactionInput;
+import OLD.Transaction.TransactionOutput;
 
 import java.security.*;
 import java.security.spec.ECGenParameterSpec;

@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij">
+      <change afterPath="$PROJECT_DIR$/src/main/java/OLD/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/ApshyMAINcoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Blockchain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Miner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lecture8/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lecture8SCKET/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lecture8/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lecture8SCKET/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/PikkwolfChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/TransactionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Transaction/TransactionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/TransactionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Transaction/TransactionOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Wallet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +75,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.AlowolChain.executor": "Run",
+    "Application.ApshyMAINcoin.executor": "Run",
+    "Application.Apshymain.executor": "Run",
     "Application.Client.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.PikkwolfChain.executor": "Run",
@@ -113,13 +129,39 @@
       <recent name="org.prog3.project" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.prog3.project.Client" />
+  <component name="RunManager" selected="Application.ApshyMAINcoin">
+    <configuration name="ApshyMAINcoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.prog3.project.ApshyMAINcoin" />
       <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.prog3.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OLD.Client" />
+      <module name="BLOCKCHAIN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OLD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OLD.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OLD.Server" />
+      <module name="BLOCKCHAIN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OLD.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +170,11 @@
       </method>
     </configuration>
     <configuration name="PikkwolfChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.prog3.project.PikkwolfChain" />
+      <option name="MAIN_CLASS_NAME" value="OLD.PikkwolfChain" />
       <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.prog3.project.Transaction.*" />
+          <option name="PATTERN" value="OLD.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,54 +183,25 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lecture8.Server" />
+      <option name="MAIN_CLASS_NAME" value="lecture8SCKET.Server" />
       <module name="BLOCKCHAIN" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lecture8.*" />
+          <option name="PATTERN" value="lecture8SCKET.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.prog3.project.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.prog3.project.Server" />
-      <module name="BLOCKCHAIN" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.prog3.project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BLOCKCHAIN" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.prog3.project.Transaction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.prog3.project" />
-      <option name="MAIN_CLASS_NAME" value="org.prog3.project.PikkwolfChainTest" />
-      <option name="METHOD_NAME" value="givenBlockchain_whenNewBlockAdded_thenSuccess" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ApshyMAINcoin" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.org.prog3.project.Server" />
+        <item itemvalue="Application.OLD.Server" />
         <item itemvalue="Application.PikkwolfChain" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="JUnit.PikkwolfChainTest.givenBlockchain_whenNewBlockAdded_thenSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -242,6 +255,7 @@
       <workItem from="1711572422216" duration="1237000" />
       <workItem from="1711974908130" duration="7410000" />
       <workItem from="1712093444566" duration="1743000" />
+      <workItem from="1712174378591" duration="8274000" />
     </task>
     <task id="LOCAL-00001" summary="commit from intellij">
       <option name="closed" value="true" />

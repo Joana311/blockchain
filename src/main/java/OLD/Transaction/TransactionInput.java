@@ -1,4 +1,4 @@
-package org.prog3.project.Transaction;
+package OLD.Transaction;
 
 public class TransactionInput {
     public String transactionOutputId; // Reference to TransactionOutputs -> transactionId

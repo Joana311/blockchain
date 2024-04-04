@@ -1,6 +1,6 @@
-package org.prog3.project.Transaction;
+package OLD.Transaction;
 
-import org.prog3.project.StringUtil;
+import OLD.StringUtil;
 
 import java.security.PublicKey;
 

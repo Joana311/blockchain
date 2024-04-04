@@ -1,4 +1,4 @@
-package lecture8;
+package lecture8SCKET;
 
 import java.io.IOException;
 import java.net.ServerSocket;

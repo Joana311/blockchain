@@ -1,7 +1,7 @@
-package org.prog3.project.Transaction;
+package OLD.Transaction;
 
-import org.prog3.project.PikkwolfChain;
-import org.prog3.project.StringUtil;
+import OLD.PikkwolfChain;
+import OLD.StringUtil;
 
 import java.security.PrivateKey;
 import java.security.PublicKey;

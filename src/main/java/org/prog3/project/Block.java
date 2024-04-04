@@ -2,51 +2,46 @@ package org.prog3.project;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.prog3.project.Transaction.Transaction;
 
-import java.util.ArrayList;
+import java.security.MessageDigest;
 import java.util.Date;
-import java.util.Objects;
 
 @Getter
 @Setter
 public class Block {
-    public String hash;
-    public String prevHash;
-    public String merkleRoot;
-    public ArrayList<Transaction> transactions = new ArrayList<>(); //our data will be a simple message.
-    private final long timeStamp;
-    private int nonce;  // the difficulty?
+    private int id;
+    private int nonce;
+    private long timeStamp;
+    private String hash;
+    private String prevHash;
+    private String data;
 
-    public Block(String prevHash) {
+    public Block(int id, String transaction, String prevHash) {
+        this.id = id;
+        this.data = transaction;
         this.prevHash = prevHash;
         this.timeStamp = new Date().getTime();
-        this.hash = calculateHash();
+        this.hash = generateHash();
     }
 
-    public String calculateHash() {
-        return StringUtil.applySha256(prevHash + timeStamp + nonce + merkleRoot);
-    }
-
-    public void mineBlock(int difficulty) { //Increases nonce value until hash target is reached.
-        merkleRoot = StringUtil.getMerkleRoot(transactions);
-        String target = StringUtil.getDificultyString(difficulty); //Create a string with difficulty * "0"
-        while (!hash.substring(0, difficulty).equals(target)) {
-            nonce++;
-            hash = calculateHash();
-        }
-        System.out.println("Block Mined!!! : " + hash);
-    }
-
-    public void addTransaction(Transaction transaction) {   //Add transactions to block
-        if (transaction == null) return;    // process transaction and check if valid, unless block is genesis then ignore
-        if ((!Objects.equals(prevHash, "0"))) {
-            if ((!transaction.processTransaction())) {
-                System.out.println("Transaction failed to process. Discarded.");
-                return;
+    public String generateHash () {
+        try {
+            String data = prevHash + timeStamp + nonce + this.data;
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hash = digest.digest(data.getBytes("UTF-8"));
+            StringBuilder hexadecimalString = new StringBuilder();
+            for (byte b : hash) {
+                String hexadecimal = Integer.toHexString(0xff & b);
+                if (hexadecimal.length() == 1) hexadecimalString.append('0');
+                hexadecimalString.append(hexadecimal);
             }
+            return hexadecimalString.toString();
         }
-        transactions.add(transaction);
-        System.out.println("Transaction Successfully added to Block");
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void incrementNonce() {
+        this.nonce++;
     }
 }
