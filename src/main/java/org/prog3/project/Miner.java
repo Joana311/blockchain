@@ -7,9 +7,10 @@ import lombok.Setter;
 @Setter
 public class Miner {
     private double reward;
+
     public void mine(Block block, Blockchain blockchain) {
         String target = new String(new char[Constants.DIFFICULTY]).replace('\0', '0');
-        while(!block.getHash().substring( 0, Constants.DIFFICULTY).equals(target)) {
+        while (!block.getHash().substring(0, Constants.DIFFICULTY).equals(target)) {
             block.incrementNonce();
             block.setHash(block.generateHash());
         }

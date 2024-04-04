@@ -10,13 +10,12 @@ import java.util.List;
 @Setter
 public class Blockchain {
     private List<Block> blockchain;
+
     public Blockchain() {
         this.blockchain = new ArrayList<>();
     }
+
     public void addBlock(Block block) {
         this.blockchain.add(block);
-    }
-    public int size() {
-        return this.blockchain.size();
     }
 }

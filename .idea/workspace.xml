@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij">
-      <change afterPath="$PROJECT_DIR$/src/main/java/OLD/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/ApshyMAINcoin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Blockchain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Miner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lecture8/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lecture8SCKET/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lecture8/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lecture8SCKET/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Block.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/PikkwolfChain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Transaction/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Transaction/TransactionInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Transaction/TransactionOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OLD/Wallet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/PikkwolfChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/PikkwolfChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Transaction/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/TransactionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Transaction/TransactionInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Transaction/TransactionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Transaction/TransactionOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OLD/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Blockchain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Blockchain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Miner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +251,7 @@
       <workItem from="1711572422216" duration="1237000" />
       <workItem from="1711974908130" duration="7410000" />
       <workItem from="1712093444566" duration="1743000" />
-      <workItem from="1712174378591" duration="8274000" />
+      <workItem from="1712174378591" duration="9098000" />
     </task>
     <task id="LOCAL-00001" summary="commit from intellij">
       <option name="closed" value="true" />
