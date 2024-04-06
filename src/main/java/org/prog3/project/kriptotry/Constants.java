@@ -1,4 +1,4 @@
-package org.prog3.project;
+package org.prog3.project.kriptotry;
 
 public class Constants {
     public static final int DIFFICULTY = 5;

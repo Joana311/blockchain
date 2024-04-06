@@ -1,4 +1,4 @@
-package org.prog3.project;
+package org.prog3.project.kriptotry;
 
 import com.google.gson.GsonBuilder;
 
