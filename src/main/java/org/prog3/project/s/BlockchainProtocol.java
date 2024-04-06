@@ -1,6 +1,6 @@
-package org.prog3.project.Protocol;
+package org.prog3.project.s;
 
-import org.prog3.project.Network.Message;
+import org.prog3.project.Network.Message.Message;
 import org.prog3.project.Network.NetworkManager;
 
 public class BlockchainProtocol implements Protocol {

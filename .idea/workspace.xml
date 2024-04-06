@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocol/BlockchainProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocol/Protocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/instructions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Message/MessageHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Utilities/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/s/PeerDiscovery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lecture8SCKET/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lecture8SCKET/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/ApshyMAINcoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/ApshyMAINcoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Blockchain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Blockchain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/MessageHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocol/BlockchainProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/s/BlockchainProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocol/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/s/Protocol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +42,12 @@
     &quot;assignee&quot;: &quot;zstoimchev&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zstoimchev/blockchain",
-    "accountId": "c34f4829-9ed9-418b-96c6-6690f37fc06a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zstoimchev/blockchain&quot;,
+    &quot;accountId&quot;: &quot;c34f4829-9ed9-418b-96c6-6690f37fc06a&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -103,7 +101,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "database.query.execution",
     "two.files.diff.last.used.folder": "/home/zstoimchev/Documents/projects/blockchain/src/main/java/lecture8",
     "vue.rearranger.settings.migration": "true"
   }
@@ -254,6 +252,7 @@
       <workItem from="1711974908130" duration="7410000" />
       <workItem from="1712093444566" duration="1743000" />
       <workItem from="1712174378591" duration="9098000" />
+      <workItem from="1712398269608" duration="4702000" />
     </task>
     <task id="LOCAL-00001" summary="commit from intellij">
       <option name="closed" value="true" />
