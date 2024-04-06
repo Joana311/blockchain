@@ -3,15 +3,22 @@ package org.prog3.project.Network;
 //import java.io.BufferedReader;
 //import java.io.IOException;
 //import java.io.InputStreamReader;
+
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.*;
 import java.net.Socket;
 
+@Getter
+@Setter
 public class Peer implements Runnable {
-    Socket connection;
-    BufferedReader in;
-    BufferedWriter out;
-    NetworkManager networkManager;
-    public Peer(NetworkManager networkManager, Socket connection) {
+    private Socket connection;
+    private BufferedReader in;
+    private BufferedWriter out;
+    private NetworkManager networkManager;
+
+    public Peer(Socket connection, NetworkManager networkManager) {
         this.networkManager = networkManager;
         this.connection = connection;
         try {
@@ -24,9 +31,10 @@ public class Peer implements Runnable {
 
     @Override
     public void run() {
+        // TODO: implement what actually is needed, the message-exchange system
         String msg;
-        try{
-            while((msg = in.readLine()) != null) {
+        try {
+            while ((msg = in.readLine()) != null) {
                 System.out.println("Msg: " + msg);
                 networkManager.broadcast(msg);
             }
@@ -42,6 +50,16 @@ public class Peer implements Runnable {
             out.flush();
         } catch (IOException e) {
             System.err.println("Connection closed by remote host");
+        }
+    }
+
+    public void disconnect() {
+        try {
+            in.close();
+            out.close();
+            connection.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

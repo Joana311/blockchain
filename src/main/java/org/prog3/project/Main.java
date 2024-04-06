@@ -6,5 +6,6 @@ public class Main {
     public static void main(String[] args) {
         System.err.println("Hello World!");
         NetworkManager networkManager = new NetworkManager();
+        networkManager.connect("localhost", 12137);
     }
 }
