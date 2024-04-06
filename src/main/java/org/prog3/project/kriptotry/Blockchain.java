@@ -1,4 +1,4 @@
-package org.prog3.project;
+package org.prog3.project.kriptotry;
 
 import lombok.Getter;
 import lombok.Setter;
