@@ -1,4 +1,4 @@
-package org.prog3.project.Network.Message;
+package org.prog3.project.Message;
 
 import lombok.Getter;
 import lombok.Setter;
