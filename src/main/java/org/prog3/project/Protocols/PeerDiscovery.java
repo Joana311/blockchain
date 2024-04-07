@@ -1,4 +1,4 @@
-package org.prog3.project.protocols;
+package org.prog3.project.Protocols;
 
 public class PeerDiscovery {
 }

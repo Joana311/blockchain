@@ -1,6 +1,6 @@
 package org.prog3.project.Network;
 
-import org.prog3.project.Network.Message.Message;
+import org.prog3.project.Message.Message;
 
 import java.io.IOException;
 import java.net.ServerSocket;
