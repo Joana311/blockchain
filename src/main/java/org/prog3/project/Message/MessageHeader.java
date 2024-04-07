@@ -1,8 +1,8 @@
-package org.prog3.project.Network.Message;
+package org.prog3.project.Message;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.prog3.project.s.Protocol;
+import org.prog3.project.Protocols.Protocol;
 
 @Getter
 @Setter

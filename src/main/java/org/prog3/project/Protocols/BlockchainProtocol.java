@@ -1,4 +1,4 @@
-package org.prog3.project.s;
+package org.prog3.project.protocols;
 
 import org.prog3.project.Network.Message.Message;
 import org.prog3.project.Network.NetworkManager;
