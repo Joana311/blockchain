@@ -1,14 +1,10 @@
 package org.prog3.project.Network;
 
-//import java.io.BufferedReader;
-//import java.io.IOException;
-//import java.io.InputStreamReader;
-
+import java.io.*;
+import java.net.Socket;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.io.*;
-import java.net.Socket;
 
 @Getter
 @Setter
@@ -59,7 +55,8 @@ public class Peer implements Runnable {
             out.close();
             connection.close();
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 }

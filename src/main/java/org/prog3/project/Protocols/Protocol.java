@@ -1,6 +1,6 @@
-package org.prog3.project.protocols;
+package org.prog3.project.Protocols;
 
-import org.prog3.project.Network.Message.Message;
+import org.prog3.project.Message.Message;
 
 public interface Protocol {
     public void digest (Message message);

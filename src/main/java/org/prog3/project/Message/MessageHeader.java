@@ -14,11 +14,11 @@ public class MessageHeader {
     private String signature;
     private Protocol protocol;
 
-    public MessageHeader(long timestamp, String signature) {
-        this.timestamp = timestamp;
+    public MessageHeader(String privateKey, String publicKey, String signature, Protocol protocol) {
+        this.timestamp = System.currentTimeMillis();
+        this.privateKey = privateKey;
+        this.publicKey = publicKey;
         this.signature = signature;
+        this.protocol = protocol;
     }
-
-
-
 }
