@@ -28,19 +28,20 @@ public class NetworkManager {
         } catch (UnknownHostException e) {
             throw new RuntimeException(e);
         }
-        if (ip.equals(constants.HOST))
-            this.isTrusted = true;
+        if (ip.equals(constants.HOST)) this.isTrusted = true;
         // TODO: discover peers here, and with the thread bellow process if message is incoming
 
         new Thread(() -> {
-            // TODO: pop message from the stack, verify it, and if true, digest it (protocol based)
-            if (!queue.isEmpty()) { // temp solution not to have error
-                if (verifyMessage(Objects.requireNonNull(queue.poll()))) {
-                    System.err.println("signature okay");
-                    // TODO: based on the protocol, do something
-                } else {
-                    // TODO: signature does not match, disconnect the node
-                    System.err.println("message signature not match. Disconnecting");
+            while (!Thread.currentThread().isInterrupted()) {
+                // TODO: maybe use locking to access the queue?
+                while (!queue.isEmpty()) {
+                    if (verifyMessage(Objects.requireNonNull(queue.poll()))) {
+                        System.err.println("signature okay");
+                        // TODO: based on the protocol, do something
+                    } else {
+                        // TODO: signature does not match, disconnect the node
+                        System.err.println("message signature not match. Disconnecting");
+                    }
                 }
             }
         }).start();
@@ -57,10 +58,6 @@ public class NetworkManager {
     }
 
     public boolean verifyMessage(Message message) {
-        // TODO: make function in crypto to verify the message, but first need to set the signature
-        return Objects.equals(cr.applySHA256(message.getBody() +
-                message.getHeader().getTimestamp() +
-                message.getHeader().getProtocol() +
-                message.getHeader().getPublicKey()), message.getHeader().getSignature());
+        return Objects.equals(cr.applySHA256(message.getBody() + message.getHeader().getTimestamp() + message.getHeader().getProtocol() + message.getHeader().getPublicKey()), message.getHeader().getSignature());
     }
 }
