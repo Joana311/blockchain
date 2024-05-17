@@ -18,7 +18,7 @@ public class NetworkManager {
     private boolean isTrusted = false;
     private HashMap<String, Peer> peers;
     private Crypto cr;
-    Queue<Message> queue = new PriorityQueue<>();
+    private Queue<Message> queue = new PriorityQueue<>();
 
     public NetworkManager(Constants constants, Crypto cr) {
         this.cr = cr;
