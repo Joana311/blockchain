@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocols/PeerDiscovery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Message/MessageHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/MessageHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/MessageHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/MessageHeader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Security/Crypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Security/Crypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocols/PeerDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocols/PeerDiscovery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Utilities/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/ApshyMAINcoin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Block.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Blockchain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/kriptotry/Miner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/s/BlockchainProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocols/BlockchainProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/s/PeerDiscovery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/s/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Protocols/Protocol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,8 +199,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
