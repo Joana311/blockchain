@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Message.Message;
 import org.prog3.project.Message.MessageHeader;
+import org.prog3.project.Security.Crypto;
 import org.prog3.project.Utilities.Constants;
 
 import java.net.InetAddress;
@@ -16,15 +17,11 @@ public class NetworkManager {
     private String ip;
     private boolean isTrusted = false;
     private HashMap<String, Peer> peers;
+    private Crypto cr;
+    Queue<Message> queue = new PriorityQueue<>();
 
-//    private Crypto crypto;
-//    private BlockingQueue<Message> messageQueue = new ArrayBlockingQueue<>(1024);
-//    private HashMap<String, PeerInfo> knownNodes;
-//    private PeerDiscovery peerDiscovery;
-
-    // TODO: config this constructor
-    // TODO: network managed needs to hear for incoming messages
-    public NetworkManager(Constants constants) {
+    public NetworkManager(Constants constants, Crypto cr) {
+        this.cr = cr;
         peers = new HashMap<>();
         try {
             this.ip = InetAddress.getLocalHost().getHostAddress();
@@ -35,10 +32,14 @@ public class NetworkManager {
             this.isTrusted = true;
         // TODO: discover peers here, and with the thread bellow process if message is incoming
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                // TODO: handle messages here
+        new Thread(() -> {
+            // TODO: pop message from the stack, verify it, and if true, digest it (protocol based)
+            if (verifyMessage(Objects.requireNonNull(queue.poll()))){
+                System.err.println("signature okay");
+                // TODO: based on the protocol, do something
+            } else {
+                // TODO: signature does not match, disconnect the node
+                System.err.println("message signature not match. Disconnecting");
             }
         }).start();
     }
@@ -55,6 +56,9 @@ public class NetworkManager {
 
     public boolean verifyMessage(Message message) {
         // TODO: make function in crypto to verify the message, but first need to set the signature
-        return true;
+        return Objects.equals(cr.applySHA256(message.getBody() +
+                message.getHeader().getTimestamp() +
+                message.getHeader().getProtocol() +
+                message.getHeader().getPublicKey()), message.getHeader().getSignature());
     }
 }
