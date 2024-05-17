@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4dccdb-872e-4393-8d57-6c4e0f637eaf" name="Changes" comment="commit from intellij">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/MessageHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Message/MessageHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/NetworkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Network/Peer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prog3/project/Security/Crypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prog3/project/Security/Crypto.java" afterDir="false" />
     </list>
