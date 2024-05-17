@@ -5,10 +5,13 @@ import java.net.Socket;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Message.Message;
+import org.prog3.project.Message.MessageHeader;
 import org.prog3.project.Protocols.Protocol;
 
 
@@ -34,15 +37,19 @@ public class Peer implements Runnable {
 
     @Override
     public void run() {
-        // TODO: implement what actually is needed, the message-exchange system
         String msg;
         try {
             while ((msg = in.readLine()) != null) {
                 System.out.println("Msg: " + msg);
-                // TODO: fix the protocol, probably need to pass it as value from/to somewhere
-                Message message = new Message(msg, protocol);
-                // TODO: if the message is valid (verified) broadcast it, otherwise error
-                networkManager.broadcast(msg);
+                MessageHeader header = new MessageHeader(protocol);
+                header.setPublicKey(networkManager.getCr().getKeyPair().getPublic());
+                header.setSignature(networkManager.getCr().applySHA256(msg +
+                        header.getTimestamp() +
+                        header.getProtocol() +
+                        header.getPublicKey()));
+                Message message = new Message(header, msg);
+                // TODO: if the message is valid (verified), add it to queue for broadcasting
+                networkManager.getQueue().add(message);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -70,15 +77,4 @@ public class Peer implements Runnable {
         }
     }
 
-    private void generateKeys() {
-        try {
-            KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
-            keyGen.initialize(2048);
-            KeyPair pair = keyGen.generateKeyPair();
-//            this.privateKey = pair.getPrivate();
-//            this.publicKey = pair.getPublic();
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("RSA algorithm not found", e);
-        }
-    }
 }
