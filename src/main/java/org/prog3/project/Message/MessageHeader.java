@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Protocols.Protocol;
 
+import static java.lang.System.currentTimeMillis;
+
 @Getter
 @Setter
 public class MessageHeader {
@@ -14,8 +16,9 @@ public class MessageHeader {
     private String signature;
     private Protocol protocol;
 
+    // TODO: edit the constructor as it should, different constructors, set the public and private keys
     public MessageHeader(String privateKey, String publicKey, String signature, Protocol protocol) {
-        this.timestamp = System.currentTimeMillis();
+        this.timestamp = currentTimeMillis();
         this.privateKey = privateKey;
         this.publicKey = publicKey;
         this.signature = signature;
