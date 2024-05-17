@@ -34,12 +34,14 @@ public class NetworkManager {
 
         new Thread(() -> {
             // TODO: pop message from the stack, verify it, and if true, digest it (protocol based)
-            if (verifyMessage(Objects.requireNonNull(queue.poll()))){
-                System.err.println("signature okay");
-                // TODO: based on the protocol, do something
-            } else {
-                // TODO: signature does not match, disconnect the node
-                System.err.println("message signature not match. Disconnecting");
+            if (!queue.isEmpty()) { // temp solution not to have error
+                if (verifyMessage(Objects.requireNonNull(queue.poll()))) {
+                    System.err.println("signature okay");
+                    // TODO: based on the protocol, do something
+                } else {
+                    // TODO: signature does not match, disconnect the node
+                    System.err.println("message signature not match. Disconnecting");
+                }
             }
         }).start();
     }
