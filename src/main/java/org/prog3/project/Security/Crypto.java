@@ -1,11 +1,16 @@
 package org.prog3.project.Security;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+@Getter
+@Setter
 public class Crypto {
     private KeyPair keyPair;
     public Crypto() {
@@ -20,9 +25,7 @@ public class Crypto {
 
 
 
-
-
-    public static String applySHA256(String input) {    // SHA256 hash algorithm
+    public String applySHA256(String input) {    // SHA256 hash algorithm
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
