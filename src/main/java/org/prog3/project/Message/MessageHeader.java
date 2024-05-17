@@ -3,6 +3,9 @@ package org.prog3.project.Message;
 import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Protocols.Protocol;
+import org.prog3.project.Security.Crypto;
+
+import java.security.PublicKey;
 
 import static java.lang.System.currentTimeMillis;
 
@@ -10,18 +13,14 @@ import static java.lang.System.currentTimeMillis;
 @Setter
 public class MessageHeader {
     private long timestamp;
-
-    private String privateKey;
-    private String publicKey;
-    private String signature;
     private Protocol protocol;
+    private PublicKey publicKey;
+    private String signature;
 
-    // TODO: edit the constructor as it should, different constructors, set the public and private keys
-    public MessageHeader(String privateKey, String publicKey, String signature, Protocol protocol) {
+    public MessageHeader(Protocol protocol) {
         this.timestamp = currentTimeMillis();
-        this.privateKey = privateKey;
-        this.publicKey = publicKey;
-        this.signature = signature;
         this.protocol = protocol;
     }
+
 }
+
