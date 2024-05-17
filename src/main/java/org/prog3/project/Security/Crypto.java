@@ -1,9 +1,27 @@
 package org.prog3.project.Security;
 
 import java.nio.charset.StandardCharsets;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class Crypto {
+    private KeyPair keyPair;
+    public Crypto() {
+        try {
+            KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
+            keyGen.initialize(2048);
+            KeyPair pair = keyGen.generateKeyPair();
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException("RSA algorithm not found", e);
+        }
+    }
+
+
+
+
+
     public static String applySHA256(String input) {    // SHA256 hash algorithm
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
