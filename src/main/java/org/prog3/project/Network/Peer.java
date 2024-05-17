@@ -41,6 +41,7 @@ public class Peer implements Runnable {
         try {
             while ((msg = in.readLine()) != null) {
                 System.out.println("Msg: " + msg);
+                // TODO: MAKE THE PROTOCOL WORK CURRENTLY IT IS USED TO AVOID ERROR
                 MessageHeader header = new MessageHeader(protocol);
                 header.setPublicKey(networkManager.getCr().getKeyPair().getPublic());
                 header.setSignature(networkManager.getCr().applySHA256(msg +
