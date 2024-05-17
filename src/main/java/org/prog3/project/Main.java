@@ -2,6 +2,7 @@ package org.prog3.project;
 
 import org.prog3.project.Network.NetworkManager;
 import org.prog3.project.Network.Peer;
+import org.prog3.project.Security.Crypto;
 import org.prog3.project.Utilities.Constants;
 
 import java.io.IOException;
@@ -11,7 +12,8 @@ import java.net.Socket;
 public class Main {
     public static void main(String[] args) {
         Constants constants = new Constants();
-        NetworkManager networkManager = new NetworkManager(constants);
+        Crypto cr = new Crypto();   // create keyPair, used later
+        NetworkManager networkManager = new NetworkManager(constants, cr);
         // connecting normal node, not "trusted"
         if (!networkManager.isTrusted()) {
             Socket socket;
