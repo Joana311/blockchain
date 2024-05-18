@@ -41,19 +41,20 @@ public class NetworkManager {
                         // TODO: based on the protocol, do something
                         switch (message.getHeader().getProtocol().getType()) {
                             case PING:
-                                // TODO: respond with pong to the server
+                                // TODO: respond with PONG to the server
                                 break;
-                            case PONG:
-                                // TODO: do nothing
+                            case PONG:  // discovered peer responded
                                 break;
                             case REQUEST:
                                 // TODO: someone send a message, process it and return
+                                // something with digest
+                                // TODO: implement the digest method in protocol class
                                 break;
-                            case RESPONSE:
-                                // TODO: Opposite of above???? probably and maybe
+                            case RESPONSE:  // received message response
                                 break;
                             default:
-                                // TODO: PROTOCOL VIOLATION. DISCONNECT
+                                System.out.println("ERROR: Protocol violation! Disconnecting...");
+                                message.getHeader().getHolder().disconnect();
                         }
                     } else {
                         // TODO: signature does not match, disconnect the node
