@@ -36,7 +36,7 @@ public class Peer implements Runnable {
             while ((msg = in.readLine()) != null) {
                 System.out.println("Msg: " + msg);
                 // TODO: MAKE THE PROTOCOL WORK CURRENTLY IT IS USED TO AVOID ERROR
-                MessageHeader header = new MessageHeader(protocol);
+                MessageHeader header = new MessageHeader(protocol, this);
                 header.setPublicKey(networkManager.getCr().getKeyPair().getPublic());
                 header.setSignature(networkManager.getCr().applySHA256(msg + header.getTimestamp() + header.getProtocol() + header.getPublicKey()));
                 Message message = new Message(header, msg);
@@ -60,9 +60,9 @@ public class Peer implements Runnable {
 
     public void disconnect() {
         try {
-            in.close();
-            out.close();
-            connection.close();
+            this.in.close();
+            this.out.close();
+            this.connection.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
