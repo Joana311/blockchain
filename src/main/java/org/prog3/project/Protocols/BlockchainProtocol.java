@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Message.Message;
 import org.prog3.project.Network.NetworkManager;
+import org.prog3.project.Network.Peer;
 
 @Getter
 @Setter
@@ -23,6 +24,11 @@ public class BlockchainProtocol implements Protocol {
 
     @Override
     public void digest(Message message) {
+
+    }
+
+    @Override
+    public void reply(Message message, Peer peer) {
 
     }
 }
