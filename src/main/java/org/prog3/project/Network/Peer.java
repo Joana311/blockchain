@@ -14,7 +14,6 @@ import org.prog3.project.Message.Message;
 import org.prog3.project.Message.MessageHeader;
 import org.prog3.project.Protocols.Protocol;
 
-
 @Getter
 @Setter
 public class Peer implements Runnable {
@@ -73,7 +72,6 @@ public class Peer implements Runnable {
             out.close();
             connection.close();
         } catch (IOException e) {
-//            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }
