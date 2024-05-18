@@ -2,17 +2,12 @@ package org.prog3.project.Network;
 
 import java.io.*;
 import java.net.Socket;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.NoSuchAlgorithmException;
-import java.util.PriorityQueue;
-import java.util.Queue;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Message.Message;
 import org.prog3.project.Message.MessageHeader;
-import org.prog3.project.Protocols.Protocol;
+import org.prog3.project.Protocols.BlockchainProtocol;
 
 @Getter
 @Setter
@@ -21,7 +16,7 @@ public class Peer implements Runnable {
     private BufferedReader in;
     private BufferedWriter out;
     private NetworkManager networkManager;
-    private Protocol protocol;
+    private BlockchainProtocol protocol;
 
     public Peer(Socket connection, NetworkManager networkManager) {
         this.networkManager = networkManager;
@@ -43,10 +38,7 @@ public class Peer implements Runnable {
                 // TODO: MAKE THE PROTOCOL WORK CURRENTLY IT IS USED TO AVOID ERROR
                 MessageHeader header = new MessageHeader(protocol);
                 header.setPublicKey(networkManager.getCr().getKeyPair().getPublic());
-                header.setSignature(networkManager.getCr().applySHA256(msg +
-                        header.getTimestamp() +
-                        header.getProtocol() +
-                        header.getPublicKey()));
+                header.setSignature(networkManager.getCr().applySHA256(msg + header.getTimestamp() + header.getProtocol() + header.getPublicKey()));
                 Message message = new Message(header, msg);
                 // TODO: if the message is valid (verified), add it to queue for broadcasting
                 networkManager.getQueue().add(message);
