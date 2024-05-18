@@ -35,9 +35,26 @@ public class NetworkManager {
             while (!Thread.currentThread().isInterrupted()) {
                 // TODO: maybe use locking to access the queue?
                 while (!queue.isEmpty()) {
-                    if (verifyMessage(Objects.requireNonNull(queue.poll()))) {
+                    Message message = queue.poll();
+                    if (verifyMessage(Objects.requireNonNull(message))) {
                         System.err.println("signature okay");
                         // TODO: based on the protocol, do something
+                        switch (message.getHeader().getProtocol().getType()) {
+                            case PING:
+                                // TODO: respond with pong to the server
+                                break;
+                            case PONG:
+                                // TODO: do nothing
+                                break;
+                            case REQUEST:
+                                // TODO: someone send a message, process it and return
+                                break;
+                            case RESPONSE:
+                                // TODO: Opposite of above???? probably and maybe
+                                break;
+                            default:
+                                // TODO: PROTOCOL VIOLATION. DISCONNECT
+                        }
                     } else {
                         // TODO: signature does not match, disconnect the node
                         System.err.println("message signature not match. Disconnecting");
