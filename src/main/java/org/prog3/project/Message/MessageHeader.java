@@ -2,8 +2,8 @@ package org.prog3.project.Message;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.prog3.project.Protocols.Protocol;
-import org.prog3.project.Security.Crypto;
+import org.prog3.project.Network.Peer;
+import org.prog3.project.Protocols.BlockchainProtocol;
 
 import java.security.PublicKey;
 
@@ -13,14 +13,12 @@ import static java.lang.System.currentTimeMillis;
 @Setter
 public class MessageHeader {
     private long timestamp;
-    private Protocol protocol;
+    private BlockchainProtocol protocol;
     private PublicKey publicKey;
     private String signature;
 
-    public MessageHeader(Protocol protocol) {
+    public MessageHeader(BlockchainProtocol protocol) {
         this.timestamp = currentTimeMillis();
         this.protocol = protocol;
     }
-
 }
-

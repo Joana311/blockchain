@@ -2,17 +2,12 @@ package org.prog3.project.Network;
 
 import java.io.*;
 import java.net.Socket;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.NoSuchAlgorithmException;
-import java.util.PriorityQueue;
-import java.util.Queue;
 
+import com.google.gson.Gson;
 import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Message.Message;
-import org.prog3.project.Message.MessageHeader;
-import org.prog3.project.Protocols.Protocol;
+import org.prog3.project.Protocols.BlockchainProtocol;
 
 @Getter
 @Setter
@@ -21,11 +16,13 @@ public class Peer implements Runnable {
     private BufferedReader in;
     private BufferedWriter out;
     private NetworkManager networkManager;
-    private Protocol protocol;
+    private BlockchainProtocol protocol;
+    private Gson gson;
 
     public Peer(Socket connection, NetworkManager networkManager) {
         this.networkManager = networkManager;
         this.connection = connection;
+        this.gson = new Gson();
         try {
             in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             out = new BufferedWriter(new OutputStreamWriter(connection.getOutputStream()));
@@ -40,37 +37,33 @@ public class Peer implements Runnable {
         try {
             while ((msg = in.readLine()) != null) {
                 System.out.println("Msg: " + msg);
-                // TODO: MAKE THE PROTOCOL WORK CURRENTLY IT IS USED TO AVOID ERROR
-                MessageHeader header = new MessageHeader(protocol);
-                header.setPublicKey(networkManager.getCr().getKeyPair().getPublic());
-                header.setSignature(networkManager.getCr().applySHA256(msg +
-                        header.getTimestamp() +
-                        header.getProtocol() +
-                        header.getPublicKey()));
-                Message message = new Message(header, msg);
-                // TODO: if the message is valid (verified), add it to queue for broadcasting
-                networkManager.getQueue().add(message);
+                Message message = gson.fromJson(msg, Message.class);
+                // TODO: add the sender in some list/array of known peers?
+                // TODO: if the message is valid (verified), add it to queue (need to be signed)
+                if (networkManager.verifyMessage(message)) networkManager.getQueue().add(message);
+                else disconnect();
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public void send(String message) {
+    public void send(Message message) {
         try {
-            out.write(message);
+            out.write(gson.toJson(message));
             out.newLine();
             out.flush();
         } catch (IOException e) {
             System.err.println("Connection closed by remote host");
+            throw new RuntimeException(e);
         }
     }
 
     public void disconnect() {
         try {
-            in.close();
-            out.close();
-            connection.close();
+            this.in.close();
+            this.out.close();
+            this.connection.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

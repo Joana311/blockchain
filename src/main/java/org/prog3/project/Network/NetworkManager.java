@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.prog3.project.Message.Message;
 import org.prog3.project.Message.MessageHeader;
+import org.prog3.project.Protocols.BlockchainProtocol;
 import org.prog3.project.Security.Crypto;
 import org.prog3.project.Utilities.Constants;
 
@@ -19,41 +20,39 @@ public class NetworkManager {
     private HashMap<String, Peer> peers;
     private Crypto cr;
     private Queue<Message> queue = new PriorityQueue<>();
+    private BlockchainProtocol blockchainProtocol;
 
     public NetworkManager(Constants constants, Crypto cr) {
         this.cr = cr;
-        peers = new HashMap<>();
+        this.peers = new HashMap<>();
+        this.blockchainProtocol = new BlockchainProtocol(this);
         try {
             this.ip = InetAddress.getLocalHost().getHostAddress();
         } catch (UnknownHostException e) {
             throw new RuntimeException(e);
         }
         if (ip.equals(constants.HOST)) this.isTrusted = true;
-        // TODO: discover peers here, and with the thread bellow process if message is incoming
-
         new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
                 // TODO: maybe use locking to access the queue?
                 while (!queue.isEmpty()) {
-                    if (verifyMessage(Objects.requireNonNull(queue.poll()))) {
-                        System.err.println("signature okay");
-                        // TODO: based on the protocol, do something
-                    } else {
-                        // TODO: signature does not match, disconnect the node
-                        System.err.println("message signature not match. Disconnecting");
+                    Message message = queue.poll();
+                    switch (message.getHeader().getProtocol().getType()) {
+                        case PING, REQUEST:
+                            blockchainProtocol.digest(message);
+                            break;
+                        case PONG, RESPONSE:
+                            break;
+                        default:
+                            System.out.println("ERROR: Protocol violation! Disconnecting...");
+                            // TODO: maybe disconnect the node that sends faulty messages
                     }
                 }
             }
         }).start();
     }
 
-    public void broadcast(String msg) {
-        peers.values().parallelStream().forEach(peer -> peer.send(msg));
-    }
-
     public Message createMessage(MessageHeader header, String body) {
-        // TODO: verify the message - set signature
-
         return new Message(header, body);
     }
 
