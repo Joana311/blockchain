@@ -16,13 +16,9 @@ public class MessageHeader {
     private BlockchainProtocol protocol;
     private PublicKey publicKey;
     private String signature;
-    private Peer holder;
 
-    public MessageHeader(BlockchainProtocol protocol, Peer peer) {
+    public MessageHeader(BlockchainProtocol protocol) {
         this.timestamp = currentTimeMillis();
         this.protocol = protocol;
-        this.holder = peer;
     }
-
 }
-
